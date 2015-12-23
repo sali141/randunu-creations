@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/jquery.oneitimageslider.css" >
+        <script type="text/javascript" src="js/jquery.js"> </script>
+        <script type="text/javascript" src="js/jquery.oneitimageslider.js"> </script>
+   
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $("#imageSlider").oneitimageslider(
+                        {
+                    width : 644 ,
+                    height : 260 ,
+                    timer : 1500, 
+                    fadeTime : 200,
+                    looping : true,
+                    order : 'sequential'
+                }
+            ); // set the plugin               
+            
+            });
+            
+        </script>
+    
+    </head>
+    
+    <body>
+        <div style="width:820px;">
+        <h1>Cougar Image Slider  - Jquery Plug-in </h1>
+        <hr>
+        <div>
+            <div style="width:644px;margin: auto">
+            <ul id="imageSlider" class="oneitSlider">
+                <li><img src="images/01.jpg"  /></li>
+                <li><img src="images/02.jpg"  /></li>
+                <li><img src="images/03.jpg"  /></li>    
+                <li><img src="images/04.jpg"  /></li>               
+            </ul>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p>01. Include JS plugin and CSS file: 
+            <br>
+            <pre style="background-color:yellow;width:820px;height:30px;line-height:30px">&lt;script type="text/javascript" src="js/jquery.oneitimageslider.js"&gt; &lt;/script&gt;
+            </pre>
+            <pre style="background-color:yellow;width:820px;height:30px;line-height:30px">&lt;link rel="stylesheet" href="css/jquery.oneitimageslider.css"&gt;
+            </pre>
+        </p>
+        <p>
+            02. List Images inside page body:<br>
+        <pre style="background-color:yellow;width:820px;height:100px;line-height:20px">
+            &lt;ul id="imageSlider" class="oneitSlider"&gt;
+            &lt;li&gt;&lt;img src="images/01.jpg"  /&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src="images/02.jpg"  /&gt;&lt;/li&gt;    
+            &lt;li&gt;&lt;img src="images/03.jpg"  /&gt;&lt;/li&gt;   
+        &lt;/ul&gt;
+        </pre>
+        </p>
+        
+        
+        <p>
+            03. Call the plugin inside document.ready jquery function:<br>
+        <pre style="background-color:yellow;width:820px;height:200px;line-height:20px">
+ $(document).ready(function(){
+     $("#imageSlider").oneitimageslider({
+       width : 644 , // width of the slider images
+       height : 260 , // height of the slider images
+       timer : 2000,  // time between each image transition in miliseconds (default value = 2000) 
+       fadeTime : 300 , // fading time in miliseconds (default value = 300) 
+       looping : true,  // if set to false, sliding will stop at the last image (default value = true) 
+       order : 'random' // random or sequential  (default value = sequential)
+        }); 
+      });
+        </pre>
+        </p>
+        </div>
+       
+        
+        
+        </div>
+        <div style="color: #555"> Saliya Randunu - Web Developer (One IT)</div>
+    </body>
+</html>

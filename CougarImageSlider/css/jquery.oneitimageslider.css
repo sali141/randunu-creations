@@ -1,0 +1,30 @@
+/* 
+    Document   : jquery.oneitimageslider
+    Created on : Nov 19, 2013, 12:00:10 PM
+    Author     : Saliya Randunu
+    Description:
+        styles for Cougar Image Slider Elements.
+*/
+
+.oneitSlider{
+    
+    position:relative;
+    overflow: hidden; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    top:0px;
+    right:0px;  
+    
+}
+
+.oneitSlider > li{
+    position:absolute;
+    top:0px;
+    right:0px;  
+}
+
+.oneitSlider > li > img { 
+    background: url('loading.gif') no-repeat center;
+}
+

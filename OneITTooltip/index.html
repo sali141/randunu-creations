@@ -1,0 +1,123 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/jquery.js"> </script>
+        <script type="text/javascript" src="js/jquery.oneittooltip.js"> </script>
+        <style>
+            .oneIt-tooltip-title {
+                background: #F3F0E7;
+                font-family: arial;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid #C8BA92;
+                padding: 5px;
+                width:  auto;
+              
+               
+            }
+            .oneIt-tooltip-body {
+               
+                background: #FFF;
+                font-family: arial;
+                font-size: 12px;
+                border-left: 1px solid #C8BA92;
+                border-right: 1px solid #C8BA92;
+                border-bottom: 1px solid #C8BA92;           
+                padding: 5px;
+                width:  auto;
+              
+            }
+            .oneIt-tooltip{
+                display:none;
+                position:absolute;   
+                
+            }
+            
+        </style>
+        <script type="text/javascript">
+                    $(document).ready(function() {
+                    // Tooltip only Text
+                    $('.OneITTooltip').oneittooltip();
+            });
+        </script>
+    </head>
+    <body>
+        
+        <div style="width:600px;">
+            <h1>One IT Tooltip - Jquery Plug-in Example (One IT)</h1>
+            
+            <div class="OneITTooltip" title="header=[Account] body=[Royal Perth Hospital]" >
+                move your mouse here <img  border="0" src="info_on.gif" >
+            </div>
+            <hr>
+            <div>
+                <p>01. Include plugin's code: 
+                    <br>
+                <pre style="background-color:yellow;width:600px;height:30px;line-height:30px"> &lt;script type="text/javascript" src="js/jquery.oneittooltip.js"&gt; &lt;/script&gt;</pre>
+                </p>
+
+                <p>
+                    02. Call the plugin:<br>
+                <pre style="background-color:yellow;width:600px;height:80px;line-height:20px">
+ $(document).ready(function() {
+                $(".OneITTooltip").oneittooltip();
+                });</pre>
+
+                </p>
+                <p>03. Add styles to CSS file: 
+                    
+                <pre style="background-color:yellow;width:600px;height:600px;line-height:20px">
+                .oneIt-tooltip-title {
+                background: #F3F0E7;
+                font-family: arial;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid #C8BA92;
+                padding: 5px;
+                width:  auto;
+              
+               
+            }
+            .oneIt-tooltip-body {
+               
+                background: #FFF;
+                font-family: arial;
+                font-size: 12px;
+                border-left: 1px solid #C8BA92;
+                border-right: 1px solid #C8BA92;
+                border-bottom: 1px solid #C8BA92;           
+                padding: 5px;
+                width:  auto;
+              
+            }
+            .oneIt-tooltip{
+                display:none;
+                position:absolute;   
+                
+            }
+                </pre>
+            </p>
+            
+            <p>04. Include class name and set title attribute in the element: 
+                <br>
+            <pre style="background-color:yellow;width:600px;height:30px;line-height:30px"> class="OneITTooltip" title="header=[Account] body=[Royal Perth Hospital]
+</pre>
+            </p>
+            
+            </div>
+            <hr>
+        
+        <div>
+            <div style="color: #555"> Saliya Randunu - Web Developer (One IT)</div>
+       
+        </div>
+        
+      
+    </body>
+</html>

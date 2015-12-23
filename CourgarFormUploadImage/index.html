@@ -1,0 +1,51 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/jquery.js"> </script>
+        <script type="text/javascript" src="js/jquery.filepicker.js"></script>
+        <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+        <script src="js/jquery.ui.widget.js"></script>
+        <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+        <script src="js/jquery.iframe-transport.js"></script>
+        <!-- The basic File Upload plugin -->
+        <script src="js/jquery.fileupload.js"></script>
+        
+        <link rel="stylesheet" href="css/file.picker.css" />
+      <script>
+            $(document).ready(function() {
+                 $(".imgSlot").filepicker();
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <form id="form1" runat="server">
+                <input type='file' id="imgInp" style="display: none" />
+               
+                
+                <ul class="imgSlotList">
+                    <li> <div class="imgSlot" id="img01" > <img class="previewImg" id="img01s" src=""  /></div></li> 
+                    <li> <div class="imgSlot" id="img02"> <img class="previewImg" src=""  /></div></li> 
+                    <li> <div class="imgSlot" id="img03"> <img class="previewImg" src=""  /></div></li> 
+                    <li> <div class="imgSlot" id="img04"> <img class="previewImg" src="" /></div></li> 
+                </ul>
+               
+            </form>
+            
+            <!-- The global progress bar -->
+            <div id="progress" class="progress">
+                <div class="progress-bar progress-bar-success"></div>
+            </div>
+            <!-- The container for the uploaded files -->
+            <div id="files" class="files"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test Image gallery popup</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.js"> </script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+    var  imglist = [];
+    
+    imglist[0] = {images:[{
+        "thumb": "sample/thumbimg1.jpg",
+        "limage": "sample/img1.jpg",
+        "Title": "Image one"},
+    {
+        "thumb": "sample/thumbimg2.jpg",
+        "limage": "sample/img2.jpg",
+        "Title": "Image two"},
+        {
+        "thumb": "sample/thumbimg3.jpg",
+        "limage": "sample/img3.jpg",
+        "Title": "Image Three"},
+        {
+        "thumb": "sample/thumbimg4.jpg",
+        "limage": "sample/img4.jpg",
+        "Title": "Image four"}
+         ]
+        }
+        
+    ;
+    
+        imglist[1] = {images:[{
+        "thumb": "sample/thumbimg5.jpg",
+        "limage": "sample/img5.jpg",
+        "Title": "Image five"},
+    {
+        "thumb": "sample/thumbimg6.jpg",
+        "limage": "sample/img6.jpg",
+        "Title": "Image six"},
+        {
+        "thumb": "sample/thumbimg7.jpg",
+        "limage": "sample/img7.jpg",
+                "Title": "Image seven"},
+            {
+                "thumb": "sample/thumbimg8.jpg",
+                "limage": "sample/img8.jpg",
+                "Title": "Image eight"}
+            ]
+        }
+
+        ;
+    
+    var imgcount = 0;
+    var currentIndex = 0;
+   $(document).ready(function(){
+       
+     
+
+
+
+        $("#nextImage").click(function() {
+                
+             //   alert(imgcount);
+                
+                if (currentIndex < (imgcount-1) ) 
+                {
+                    currentIndex++;
+                    var imageStr = $(".thumbItem").eq(currentIndex).attr("zoom-img"); 
+                    //$('#largeImage').attr("src",imageStr);
+        
+                    $("#mainImg")
+                            .fadeOut(100, function() {
+                                   $("#mainImg").attr('src', imageStr);
+                               }).fadeIn(100);
+
+                           }
+               });
+
+        $("#prevImage").click(function() {
+
+                   if (currentIndex > 0)
+                   {
+                       currentIndex--;
+                       var imageStr = $(".thumbItem").eq(currentIndex).attr("zoom-img");
+                       // $('#largeImage').attr("src",imageStr);
+                       $("#mainImg")
+                               .fadeOut(100, function() {
+                           $("#mainImg").attr('src', imageStr);
+                       }).fadeIn(100);
+                   }
+               });
+
+       
+              
+            
+              
+        $(".thumbItem").live("click",function(){
+        imageStr = $(this).attr('zoom-img');
+        currentIndex = $(this).index();
+        
+        $("#mainImg")
+                               .fadeOut(100, function() {
+                           $("#mainImg").attr('src', imageStr);
+                       }).fadeIn(100);
+            //$("#mainImg").attr('src',imageStr);
+           
+        });      
+    });
+</script>
+
+</head>
+
+<body>
+	<a href="#" class="topopup" id="0">Click Here open receipt 1 </a>
+        <br>
+        <a href="#" class="topopup" id="1">Click Here open receipt 2 </a>
+    
+    <div id="toPopup"> 
+    	
+        <div class="close"></div>
+       	<span class="ecs_tooltip">Press Esc to close <span class="arrow"></span></span>
+		<div id="popup_content"> <!--image gallery start-->
+                    <div id="thumbList">
+                        <ul>
+                      
+                            
+                        </ul>
+                    </div>
+                    <div id="imgPreview">
+                        <img id="mainImg" src="sample/img1.jpg">
+                    </div>
+                    <div class="clr"></div>
+                    
+                    <div id="imgButtons" style="margin:10px auto;width:700px;">
+                        <a href="#" id="prevImage" class="frmButton" style="float:left">Prev</a>
+                        <a href="#" id="nextImage" class="frmButton" style="float:right">Next</a>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="clr"></div>
+        </div> <!--image gallery end-->
+        
+    </div>
+	<div class="loader"></div>
+   	<div id="backgroundPopup"></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/jquery.js"> </script>
+        <script>
+            $(document).keydown(function (e) {
+                var element = e.target.nodeName.toLowerCase();
+                if ((element != 'input' && element != 'textarea') ) {
+                    if (e.keyCode === 8) {
+                        e.preventDefault();
+                       return false;
+                     
+                    }
+                }
+                });
+            
+   
+        </script>
+        
+    </head>
+    <body>
+    <div>
+            <form id="frmAdd" action="destination.html">
+                <input type="text" value="Hello there" /><br>
+                
+                <input type="text" value="Hello there" /><br>
+                <textarea>Testing</textarea>
+                <input type="submit" value="Default" class="frmButton defaultButton" />
+               
+
+            </form>
+
+        </div>
+        <h1>Prevent Backspace </h1>
+        <div>
+            
+            <pre style="">
+&lt;script&gt;
+$(document).keydown(function (e) {
+                var element = e.target.nodeName.toLowerCase();
+                if ((element != 'input' && element != 'textarea')) {
+                    if (e.keyCode === 8) {
+                        e.preventDefault();
+                        return false;
+                    }
+                } &lt;/script&gt;
+            </pre>
+        </div>   
+        <div>Saliya Randunu - One IT</div>
+       </body>
+</html>

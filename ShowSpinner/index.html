@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Show spinner button</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.js"> </script>
+<script type="text/javascript" src="js/jquery.showspinner.js"></script>
+<script type="text/javascript">
+
+   $(document).ready(function(){
+       
+     $('.showspinner').showspinner({
+                  'loaderImage' : 'img/loading.gif',
+                  'opacity' : '0.6'
+              });
+    });
+</script>
+   
+</head>
+
+<body>
+    <button class="showspinner">My Button</button>
+        
+	
+   	
+</body>
+</html>

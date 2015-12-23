@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/jquery.js"> </script>
+        <script type="text/javascript" src="js/jquery.enterkeyastab.js"> </script>
+        <style type="text/css">
+            body {
+                font-family:Arial;
+            }
+        </style>
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $("#frmOne").enterkeyastab(); // set the plugin to form 1                
+                $("#frmThree").enterkeyastab(); // set the plugin to form 3
+            });
+        </script>
+    
+    </head>
+    
+    <body>
+        <div style="width:600px;">
+        <h1>Enter Key as Tab - Jquery Plug-in Example (One IT)</h1>
+        <div>
+            <p>01. Include plugin's code: 
+            <br>
+            <pre style="background-color:yellow;width:600px;height:30px;line-height:30px"> &lt;script type="text/javascript" src="js/jquery.enterkeyastab.js"&gt; &lt;/script&gt;</pre>
+        </p>
+        
+        <p>
+            02. Call the plugin:<br>
+        <pre style="background-color:yellow;width:600px;height:30px;line-height:30px">$("#formID").enterkeyastab();</pre>
+            
+        </p>
+        </div>
+        <hr>
+        <div>
+            <h2>Form 1 - set to Enter Key as Tab Plug-in </h2>
+            <form id="frmOne" action="destination1.html">
+                <input type="text" value="Hello there" /><br>
+                <input type="text" value="Hello there" /><br>
+                <select >
+                    <option>Test 1</option>
+                    <option>Test 2</option>
+                </select><br>
+                <textarea ></textarea>
+                <br>
+                <input type="submit" value="View"  />
+                <input type="submit" value="Print" />
+                <input type="submit" value="Save" class="defaultButton" /><br>
+                
+            </form>
+            <hr>
+            
+            
+            <h2>Form 2 - Normal form </h2>
+            <form id="frmTwo" action="destination2.html">
+                <input type="text" value="Hello there" /><br>
+                <input type="text" value="Hello there" /><br>
+                <select >
+                    <option>Test 1</option>
+                    <option>Test 2</option>
+                </select><br>
+                <textarea ></textarea>
+                <br>
+               
+                <input type="submit" value="Save" /><br>
+
+            </form>
+            <hr>
+            
+            <h2>Form 3 - set to Enter Key as Tab Plug-in </h2>
+            <form id="frmThree" action="destination3.html">
+                <input type="text" value="Hello there" /><br>
+                <input type="text" value="Hello there" /><br>
+                <select >
+                    <option>Test 1</option>
+                    <option>Test 2</option>
+                </select><br>
+                <textarea ></textarea>
+                <br>
+
+                <input type="submit" value="Save" class="defaultButton" /><br>
+
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

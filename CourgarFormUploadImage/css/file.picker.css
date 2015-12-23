@@ -1,0 +1,35 @@
+/* 
+    Document   : file.picker
+    Created on : Oct 17, 2013, 11:34:11 AM
+    Author     : saliya
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body {
+    font-family:Arial;
+}
+.imgSlotList {
+    list-style: none;
+}
+.imgSlotList li{
+    display: inline-block;
+    width:64px;
+    margin-right: 15px;
+}
+.imgSlot {
+    background: url(../img/photo.png) center no-repeat;
+    border: solid 1px #CCC;  
+    width : 64px;
+    height: 64px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.previewImg {
+    
+   width : 64px;
+   height : 64px;
+   display: none;
+  
+}

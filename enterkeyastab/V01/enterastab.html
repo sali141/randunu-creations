@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/jquery.js"> </script>
+        <script type="text/javascript" src="js/enterastab.js"> </script>
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $("#frmAdd").enterkeyastab(); // set enter key as tab function to form
+            });
+        </script>
+      
+    </head>
+    <body>
+        <div>
+            <form id="frmAdd" action="destination.html">
+                <input type="text" value="Hello there" /><br>
+                <input type="text" value="Hello there" /><br>
+                <select >
+                    <option>Test 1</option>
+                    <option>Test 2</option>
+                </select><br>
+                <textarea ></textarea>
+                <br>
+                <input type="submit" value="View"  />
+                <input type="submit" value="Print" />
+                <input type="submit" value="Save" class="defaultButton" /><br>
+                
+            </form>
+            
+        </div>
+    </body>
+</html>

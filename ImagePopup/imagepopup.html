@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>One IT - Image gallery Popup</title>
+<link href="style/imagepopup.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.js"> </script>
+<script type="text/javascript" src="js/jquery.imagepopup.js"></script>
+<script type="text/javascript">    
+   
+    var remoteJsonfile = "imglistjson.jsp"; // remote jsp file generates the json string
+ 
+</script>
+
+</head>
+
+<body>
+    <a href="#" class="topopup" row-id="1">Click Here open receipt 1 </a>
+        <br>
+        <a href="#" class="topopup" row-id="2">Click Here open receipt 2 </a>
+    
+    
+    <!--popup image code end-->
+    <div id="toPopup"> 
+    	
+        <div class="close"></div>
+       	<span class="ecs_tooltip">Press Esc to close <span class="arrow"></span></span>
+		<div id="popup_content"> <!--image gallery start-->
+                    <div id="thumbList">
+                        <ul>
+                      
+                            
+                        </ul>
+                    </div>
+                    <div id="imgPreview">
+                        <img id="mainImg" src="sample/img1.jpg">
+                    </div>
+                    <div class="clr"></div>
+                    
+                    <div id="imgButtons" style="margin:10px auto;width:700px;">
+                        <a href="#" id="prevImage" class="frmButton" style="float:left">Prev</a>
+                        <a href="#" id="nextImage" class="frmButton" style="float:right">Next</a>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="clr"></div>
+        </div> 
+        
+    </div>
+	<div class="loader"></div>
+   	<div id="backgroundPopup"></div>
+        <!--popup image code  end-->
+</body>
+</html>
